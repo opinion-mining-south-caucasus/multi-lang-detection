@@ -10,10 +10,10 @@ def detect_multi_lang(text):
     ret = []
     if any(letter in text for letter in aze):
         ret.append('az')
-    if any(letter in text for letter in geo)::
+    if any(letter in text for letter in geo):
         ret.append('ka')
-    if any(letter in text for letter in arm)::
+    if any(letter in text for letter in arm):
         ret.append('ar')
-    if any(letter in text for letter in rus)::
+    if any(letter in text for letter in rus):
         ret.append('ru')
     return ret
